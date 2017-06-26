@@ -1,19 +1,24 @@
-﻿using System.Reflection;
+﻿using System;
+using System.Reflection;
 using System.Runtime.CompilerServices;
-using System.Runtime.InteropServices;
 
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("System.Collections.Concurrent.WindowsCE")]
-[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCompany("Fabrício Godoy")]
+[assembly: AssemblyCopyright("© Fabrício Godoy. All rights reserved.")]
+[assembly: AssemblyProduct("System.Collections.Concurrent")]
+[assembly: AssemblyDescription("Provides several thread-safe collection classes that should be used whenever multiple threads are accessing the collection concurrently")]
+[assembly: CLSCompliant(true)]
 
-// Setting ComVisible to false makes the types in this assembly not visible
-// to COM components.  If you need to access a type in this assembly from
-// COM, set the ComVisible attribute to true on that type.
-[assembly: ComVisible(false)]
+[assembly: AssemblyVersion("1.0.0.0")]
+[assembly: AssemblyInformationalVersion("1.0.0")]
+[assembly: AssemblyFileVersion("1.0.0.0")]
 
-// The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("07c8524e-0f38-4298-aac6-806a4f7d6424")]
+#if DEBUG
+[assembly: AssemblyConfiguration("Debug")]
+#else
+[assembly: AssemblyConfiguration("Retail")]
+#endif
+
+[assembly: InternalsVisibleTo("Concurrent.Tests, PublicKey=" + Consts.SkarllotPublicKey)]

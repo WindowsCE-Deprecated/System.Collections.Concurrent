@@ -10,6 +10,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		System.Collections.Concurrent.WindowsCE.nuspec = System.Collections.Concurrent.WindowsCE.nuspec
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{EC144E13-A677-4D12-9F6C-473BCE529E2E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Concurrent.Tests", "test\Concurrent.Tests\Concurrent.Tests.csproj", "{1F117C36-5B92-4EB7-9C5C-94D04BC58575}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,8 +24,15 @@ Global
 		{07C8524E-0F38-4298-AAC6-806A4F7D6424}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{07C8524E-0F38-4298-AAC6-806A4F7D6424}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{07C8524E-0F38-4298-AAC6-806A4F7D6424}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F117C36-5B92-4EB7-9C5C-94D04BC58575}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F117C36-5B92-4EB7-9C5C-94D04BC58575}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F117C36-5B92-4EB7-9C5C-94D04BC58575}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F117C36-5B92-4EB7-9C5C-94D04BC58575}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1F117C36-5B92-4EB7-9C5C-94D04BC58575} = {EC144E13-A677-4D12-9F6C-473BCE529E2E}
 	EndGlobalSection
 EndGlobal
