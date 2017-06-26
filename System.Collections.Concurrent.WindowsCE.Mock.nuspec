@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>System.Collections.Concurrent.WindowsCE.Mock</id>
+    <version>$version$</version>
+    <title>System.Collections.Concurrent for WindowsCE</title>
+    <authors>Fabricio Godoy</authors>
+    <owners>skarllot,fgodoy-verion</owners>
+    <licenseUrl>https://github.com/WindowsCE/System.Collections.Concurrent/blob/master/LICENSE.txt</licenseUrl>
+    <projectUrl>https://github.com/WindowsCE/System.Collections.Concurrent</projectUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <copyright>Copyright © Fabrício Godoy</copyright>
+    <summary>Provides several thread-safe collection classes that should be used whenever multiple threads are accessing the collection concurrently</summary>
+    <description>
+      Provides several thread-safe collection classes that should be used in place of the corresponding types in the System.Collections.NonGeneric and System.Collections packages whenever multiple threads are accessing the collection concurrently.
+
+      Commonly Used Types:
+      System.Collections.Concurrent.ConcurrentDictionary&lt;TKey, TValue&gt;
+      System.Collections.Concurrent.ConcurrentQueue&lt;T&gt;
+      System.Collections.Concurrent.ConcurrentBag&lt;T&gt;
+      System.Collections.Concurrent.BlockingCollection&lt;T&gt;
+      System.Collections.Concurrent.ConcurrentStack&lt;T&gt;
+
+      Mimics the package System.Collections.Concurrent.
+    </description>
+    <language>en-US</language>
+    <tags>net35-cf,windowsce,wince,netstandard,netstandard1.0,concurrent,safe</tags>
+    <dependencies>
+      <group targetFramework=".NETFramework3.5">
+        <dependency id="System.Runtime.WindowsCE.Mock" version="[1.0.2, )" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>
